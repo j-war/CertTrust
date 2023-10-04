@@ -10,7 +10,8 @@ Note:
 - Will handle certificates saved with CRLF and LF endings as well as some missing fields.
 
 ### Known limitations and caveats:
- - Some certificates may not appear in the Certificate Trust Settings even if they are successfully added and usable by the simulator. Some certificates are not automatically toggled.
+- Certificates without a CN may not show in Certificate Trust Settings. developer.apple.com/forums/thread/89568
+- Some certificates may not appear in the Certificate Trust Settings even if they are successfully added and usable by the simulator. Some certificates are not automatically toggled.
 - The TrustStore file is created after after a simulator has been started for the first time so this script will need to be run afterwards.
 - You may need to close and reopen the simulator after running the script.
 
